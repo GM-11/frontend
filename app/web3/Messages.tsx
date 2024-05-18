@@ -1,6 +1,7 @@
 "use client";
+
 import { useRegisteredContract } from "@soroban-react/contracts";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import * as StellarSdk from "@stellar/stellar-sdk";
 
 function Messages() {
@@ -20,6 +21,7 @@ function Messages() {
 
       if (result) {
         const result_val = StellarSdk.scValToNative(
+          /// @ts-ignore
           result.returnValue as StellarSdk.xdr.ScVal
         );
         console.log("Result from contract invocation", result_val);
@@ -45,6 +47,7 @@ function Messages() {
 
       if (result) {
         const result_val = StellarSdk.scValToNative(
+          /// @ts-ignore
           result.returnValue as StellarSdk.xdr.ScVal
         ) as string;
         console.log("Result from contract invocation", result_val);
@@ -66,7 +69,9 @@ function Messages() {
       <div className="w-full">
         {messages.length === 0 ? (
           <>
-            <button onClick={getMessages}>GET MESSAGES</button>
+            <button className="bg-white p-2 rounded-full text-black" onClick={getMessages}>
+              GET MESSAGES
+            </button>
           </>
         ) : (
           <div className="w-full">
