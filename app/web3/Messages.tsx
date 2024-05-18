@@ -1,3 +1,4 @@
+"use client";
 import { useRegisteredContract } from "@soroban-react/contracts";
 import React, { useState } from "react";
 import * as StellarSdk from "@stellar/stellar-sdk";

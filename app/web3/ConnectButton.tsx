@@ -1,3 +1,4 @@
+"use client";
 import { useSorobanReact } from "@soroban-react/core";
 
 export const ConnectButton = () => {
