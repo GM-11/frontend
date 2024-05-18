@@ -10,9 +10,9 @@ import type { ChainMetadata, Connector } from "@soroban-react/types";
 
 const deployments = [
   {
-    contractId: "toss",
+    contractId: "dapp",
     networkPassphrase: "Test SDF Network ; September 2015",
-    contractAddress: "CD32CDGCQQLMWOKGVK4O3HFT7NDUA4COQM66POAVMXOM4RDYIPGXX3OM",
+    contractAddress: "CB2NLCUYTI33L7IRB2TYLUJH7LKZUJRJH72OO2H5CV2LMTPYZRQDIZ2K",
   },
 ];
 

@@ -7,7 +7,7 @@ function Messages() {
   const [messages, setMessage] = useState<string[]>([]);
   const [fetchIsLoading, setFetchIsLoading] = useState<boolean>(false);
   const [currMessage, setCurrMessage] = useState("");
-  const contract = useRegisteredContract("toss");
+  const contract = useRegisteredContract("dapp");
 
   async function getMessages() {
     try {
