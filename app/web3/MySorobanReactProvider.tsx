@@ -12,7 +12,7 @@ const deployments = [
   {
     contractId: "dapp",
     networkPassphrase: "Test SDF Network ; September 2015",
-    contractAddress: "CB2NLCUYTI33L7IRB2TYLUJH7LKZUJRJH72OO2H5CV2LMTPYZRQDIZ2K",
+    contractAddress: "CCQXEBL2BJMY6BPOBNA22QOY25XZFGA2KTSW2DUBOU7Q4EQWWGL4723C",
   },
 ];
 
